@@ -1,0 +1,54 @@
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Project docs / guide (local only, not pushed) ---
+/docs/
+/CLAUDE.md
+/TODO.md
+
+# --- Go (backend) ---
+backend/bin/
+backend/tmp/
+*.exe
+*.exe~
+*.test
+*.out
+backend/vendor/
+
+# --- Node / Vite / Turborepo (frontend) ---
+frontend/node_modules/
+frontend/**/node_modules/
+frontend/**/dist/
+frontend/**/dist-ssr/
+frontend/.turbo/
+frontend/**/.turbo/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# --- Docker / local DB volumes ---
+.postgres-data/
+pgdata/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# --- Logs ---
+*.log
+logs/
